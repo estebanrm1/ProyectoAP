@@ -1,0 +1,41 @@
+body{
+    background-color: black;
+    color: rgb(230, 247, 72);
+}
+
+.fuente_titulos{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/**      Navbar          **/
+
+.navbar{
+    border-bottom: solid 2px rgb(230, 247, 72);
+    background-color: black;
+}
+
+.logo_cv{
+    max-width: 150px;
+    height: auto;
+}
+
+/**    Imagenes     **/
+
+.imagen_bg_1{
+    background-image: url("/img/pexels-lukas-574071.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.imagen_opaca{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+}
+
