@@ -1,18 +1,17 @@
+const mostrarBtn1 = document.getElementById("mostrarBtn1");
+const mostrarBtn2 = document.getElementById("mostrarBtn2");
+const listaDesplegable1 = document.getElementById("listaDesplegable1");
+const listaDesplegable2 = document.getElementById("listaDesplegable2");
 
-const mostrarBtn = document.getElementById('mostrarBtn');
-const listaDesplegable = document.getElementById('listaDesplegable');
+let lista1Visible = false;
+let lista2Visible = false;
 
-// Agregar un event listener al botón
-mostrarBtn.addEventListener('click', () => {
-    // Cambiar el estilo de la lista para mostrarla o esconderla
-    if (listaDesplegable.style.display === 'none') {
-        listaDesplegable.style.display = 'block';
-    } else {
-        listaDesplegable.style.display = 'none';
-    }
+mostrarBtn1.addEventListener("click", () => {
+    lista1Visible = !lista1Visible;
+    listaDesplegable1.style.display = lista1Visible ? "block" : "none";
 });
 
-
-
-
-
+mostrarBtn2.addEventListener("click", () => {
+    lista2Visible = !lista2Visible;
+    listaDesplegable2.style.display = lista2Visible ? "block" : "none";
+});

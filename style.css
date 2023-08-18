@@ -1,26 +1,26 @@
-body{
+body {
     font-family: 'Ubuntu', sans-serif;
 }
 
-.color_titulo_principal{
+.color_titulo_principal {
     color: #726efc;
 }
 
 /**      Navbar          **/
 
-.navbar{
+.navbar {
     border-bottom: solid 2px #4741d7;
     background-color: black;
 }
 
-.logo_cv{
+.logo_cv {
     max-width: 150px;
     height: auto;
 }
 
 /**    Imagenes     **/
 
-.imagen_bg_1{
+.imagen_bg_1 {
     background-image: url("/img/pexels-lukas-574071.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -28,7 +28,7 @@ body{
     background-attachment: fixed;
 }
 
-.imagen_opaca{
+.imagen_opaca {
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -41,22 +41,28 @@ body{
 /**    Botones     **/
 
 .boton {
-    background: black; /* color de fondo */
-    color: #fff; /* color de fuente */
-    border: 2px solid #4741d7; /* tamaño y color de borde */
+    color: #4741d7;
+    /* color de fuente */
+    border: 2px solid #4741d7;
+    /* tamaño y color de borde */
     padding: 10px 14px;
-    border-radius: 3px; /* redondear bordes */
+    border-radius: 3px;
+    /* redondear bordes */
     position: relative;
     z-index: 1;
     overflow: hidden;
     display: inline-block;
-  }
-  .boton:hover {
-    color: #fff;/* color de fuente hover */
-  }
-  .boton::after {
+}
+
+.boton:hover {
+    color: #fff;
+    /* color de fuente hover */
+}
+
+.boton::after {
     content: "";
-    background: #4741d7; /* color de fondo hover */
+    background: #4741d7;
+    /* color de fondo hover */
     position: absolute;
     z-index: -1;
     padding: 10px 14px;
@@ -67,12 +73,14 @@ body{
     bottom: 0;
     transform: skewX(45deg) scale(0, 1);
     transition: all 0.3s ease;
-  }
-  .boton:hover::after {
+}
+
+.boton:hover::after {
     transition: all 0.3s ease-out;
     transform: skewX(45deg) scale(1, 1);
-  }
+}
 
-.listaSinPuntos{
+.listaSinPuntos {
+    display: none;
     list-style: none;
 }
