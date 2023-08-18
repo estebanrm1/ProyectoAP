@@ -1,16 +1,15 @@
 body{
-    background-color: black;
-    color: rgb(230, 247, 72);
+    font-family: 'Ubuntu', sans-serif;
 }
 
-.fuente_titulos{
-    font-family: 'Ubuntu', sans-serif;
+.color_titulo_principal{
+    color: #726efc;
 }
 
 /**      Navbar          **/
 
 .navbar{
-    border-bottom: solid 2px rgb(230, 247, 72);
+    border-bottom: solid 2px #4741d7;
     background-color: black;
 }
 
@@ -36,6 +35,44 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.685);
 }
 
+/**    Botones     **/
+
+.boton {
+    background: black; /* color de fondo */
+    color: #fff; /* color de fuente */
+    border: 2px solid #4741d7; /* tamaño y color de borde */
+    padding: 10px 14px;
+    border-radius: 3px; /* redondear bordes */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+  }
+  .boton:hover {
+    color: #fff;/* color de fuente hover */
+  }
+  .boton::after {
+    content: "";
+    background: #4741d7; /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    padding: 10px 14px;
+    display: block;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(45deg) scale(0, 1);
+    transition: all 0.3s ease;
+  }
+  .boton:hover::after {
+    transition: all 0.3s ease-out;
+    transform: skewX(45deg) scale(1, 1);
+  }
+
+.listaSinPuntos{
+    list-style: none;
+}
