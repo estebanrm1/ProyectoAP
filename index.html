@@ -18,7 +18,7 @@
 
 <body>
     <header>
-        <nav class="navbar fixed-top">
+        <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="">
                     <img src="./img/EstebanM.png" alt="Logo cv" class="logo_cv" />
@@ -27,83 +27,167 @@
         </nav>
     </header>
     <main>
-        <section class="imagen_bg_1">
-            <aside class="imagen_opaca">
-                <i class="fa-solid fa-code" style="color: #fff;"></i>
-                <h2 class="fs-1 color_titulo_principal">Bienvenid@s</h2>
-                <i class="fa-solid fa-code" style="color: #fff;"></i>
-            </aside>
+        <section>
+            <article class="imagen_bg_1">
+                <aside class="imagen_opaca">
+                    <i class="fa-solid fa-code" style="color: #fff;"></i>
+                    <h1 class="fs-1 color_titulo_principal">Bien<span class="text-light">v<span class="text-warning">e</span>n</span>id@s</h1>
+                    <i class="fa-solid fa-code" style="color: #fff;"></i>
+                </aside>
+            </article>
         </section>
         <section>
-            <article class="bg_degradado p-5">
+            <article class="bg_degradado mb-4 p-5">
                 <div class="row text-center">
-                    <div class="col-lg-6">
-                        <img src="./img/imagenEstebanPerfil.jpeg" alt="Imagen Esteban" class="imagen_perfil border border-primary-subtle">
+                    <div class="col-12 my-3 col-lg-4">
+                        <img src="./img/imagenEstebanPerfil.jpeg" alt="Imagen Esteban"
+                            class="imagen_perfil border border-primary-subtle">
                     </div>
-                    <div class="col-lg-6 text-light fs-4">
-                        <p>¡Hola! Soy Esteban Molina, un apasionado desarrollador web full stack recién graduado y entusiasta de la tecnología. Mi formación académica en desarrollo web me ha proporcionado una base sólida en lenguajes de programación, frameworks y librerias.</p>
+                    <div class="col-12 col-lg-7 text-light fs-4">
+                        <p>¡Hola! Soy Esteban Molina, un apasionado desarrollador web full stack recién graduado y
+                            entusiasta de la tecnología. Mi formación académica en desarrollo web me ha proporcionado
+                            una base sólida en lenguajes de programación, frameworks y librerias.</p>
                         <p>Te invito a recorrer mi cv. Vamos!</p>
                     </div>
+                </div>
+            </article>
+            <div class="bg_TituloSeccion p-4 text-light text-center">
+                <h3>Formación</h3>
+            </div>
+            <article class="m-5">
+                <div>
+                    <h5 class="text-primary">Argentina programa:</h5>
+                    <p>2020 - 2023 <br>(<i>fundamentos de la programacion, html, css, javascript</i>)</p>
+                </div>
+                <hr>
+                <div>
+                    <h5 class="text-primary">RollingCode School:</h5>
+                    <p>2022 - 2023 <i>(Desarrollador web Full Stack MERN)</i></p>
+                </div>
+                <hr>
+                <div>
+                    <h5 class="text-primary">Secretaría de innovación pública:</h5>
+                    <p>Programación web con <i>html y css</i> </p>
                 </div>
             </article>
             <div class="mt-4 bg_TituloSeccion p-4 text-light text-center">
                 <h3>Skills</h3>
             </div>
-                <article class="py-4 container lenguajes_frameworks text-center">
-                    <p>A través de mi educación y proyectos personales, he adquirido habilidades en la creación de aplicaciones web interactivas y atractivas. Mi enfoque en el desarrollo full stack me ha permitido comprender tanto el aspecto front-end como el back-end de las aplicaciones, lo que me capacita para crear soluciones completas y funcionales.</p>
-                        <p>Pulse la opcion deseada para visualizar</p>
-                        <div class="row text-center pb-5">
-                            <div class="col-6">
-                                <button class="boton" id="mostrarBtn1">Frontend</button>
-                                <ul class="list-group listaSinPuntos" id="listaDesplegable1">
-                                    <li><i class="fa-brands fa-html5" style="color: #f58438;"></i> Html</li>
-                                    <li><i class="fa-brands fa-css3-alt" style="color: #458fd3;"></i> CSS</li>
-                                    <li><i class="fa-brands fa-square-js" style="color: #cfc930;"></i> Javascript</li>
-                                    <li><i class="fa-brands fa-bootstrap" style="color: #7941a4;"></i> Bootstrap</li>
-                                    <li><i class="fa-brands fa-react" style="color: #538cee;"></i> React</li>
-                                </ul>
-                            </div>
-                            <div class="col-6">
-                                <button class="boton" id="mostrarBtn2">Backend</button>
-                                <ul class="list-group listaSinPuntos" id="listaDesplegable2">
-                                    <li><i class="fa-brands fa-node" style="color: #549447;"></i> Node.js</li>
-                                    <li><img src="./img/mongodb (3).png" alt=""> MongoDB</li>
-                                    <li><img src="/img/icons8-express-js-40.png" style="height: 30px;" alt="Logo Express"> Express.js</li>
-                                    <li><img src="./img/Mongoose.js.png" alt="Logo Mongoose" style="width: 40px;"></i> Mongoose.js</li>
-                                </ul>
-                            </div>
+            <article class="py-4 container lenguajes_frameworks text-center">
+                <h4>A través de mi educación y proyectos personales, he adquirido habilidades en la creación de
+                    aplicaciones web interactivas y atractivas. Mi enfoque en el desarrollo full stack me ha permitido
+                    comprender tanto el aspecto <i>front-end como el back-end de las aplicaciones</i>, lo que me capacita para
+                    crear soluciones completas y funcionales.</h4>
+                <p>Pulse la opcion deseada para visualizar</p>
+                <div class="row text-center pb-5">
+                    <div class="col-6">
+                        <button class="boton" id="mostrarBtn1">Frontend</button>
+                        <ul class="list-group listaSinPuntos" id="listaDesplegable1">
+                            <li><i class="fa-brands fa-html5" style="color: #f58438;"></i> Html</li>
+                            <li><i class="fa-brands fa-css3-alt" style="color: #458fd3;"></i> CSS</li>
+                            <li><i class="fa-brands fa-square-js" style="color: #cfc930;"></i> Javascript</li>
+                            <li><i class="fa-brands fa-bootstrap" style="color: #7941a4;"></i> Bootstrap</li>
+                            <li><i class="fa-brands fa-react" style="color: #538cee;"></i> React</li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <button class="boton" id="mostrarBtn2">Backend</button>
+                        <ul class="list-group listaSinPuntos" id="listaDesplegable2">
+                            <li><i class="fa-brands fa-node" style="color: #549447;"></i> Node.js</li>
+                            <li><img src="./img/mongodb (3).png" alt="Logo mongo"> MongoDB</li>
+                            <li><img src="/img/icons8-express-js-40.png" style="height: 30px;" alt="Logo Express">
+                                Express.js</li>
+                            <li><img src="./img/Mongoose.js.png" alt="Logo Mongoose" style="width: 40px;"> Mongoose.js
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <div class="bg_TituloSeccion p-4 text-light text-center">
+                <h3>Práctica adquirida</h3>
+            </div>
+            <article class="d-flex row text-center justify-content-around m-0 py-5">
+                <h4>Eston son algunos de mis proyectos realizados con los conocimientos que fui adquiriendo en mi formacion academica, investigacion y de mis colegas con los que pude trabajar y compartir proyectos.</h4>
+                <div class="contenedor p-4">
+                    <figure>
+                        <img src="./img/rolling+i.png" alt="">
+                        <div class="capa">
+                            <h4 class="text-light">Rolling+</h4>
+                    <p>Proyecto grupal.<br> Interfaz para un sitio de streaming. <br>
+                        Utilizamos trello para gestionar el flujo de trabajo</p>
+                        <div>
+                        <i class="fa-brands fa-html5" style="color: #f58438;"></i>
+                        <i class="fa-brands fa-css3-alt" style="color: #458fd3;"></i>
+                        <i class="fa-brands fa-bootstrap" style="color: #7941a4;"></i>
+                    </div>
+                    <a href="https://rolling-plus-42i.netlify.app/" target="_blank" class="boton text-decoration-none">Ver proyecto</a>
+                    </div>
+                    </figure>
+                </div>
+                <div class="contenedor p-4">
+                    <figure>
+                        <img src="./img/tictactoe.png" alt="">
+                        <div class="capa">
+                            <h4 class="text-light">Tic-Tac-Toe</h4>
+                            <p>Blog de juegos Creado por compañeros para practica. <br>
+                            Utilizamos el controlador de versiones git
+                            hub para gestionar el proyecto</p>
+                            <div>
+                            <i class="fa-brands fa-html5" style="color: #f58438;"></i>
+                            <i class="fa-brands fa-css3-alt" style="color: #458fd3;"></i>
+                            <i class="fa-brands fa-bootstrap" style="color: #7941a4;"></i>
+                            <i class="fa-brands fa-square-js" style="color: #cfc930;"></i>
                         </div>
-                </article>
-                <div class="bg_TituloSeccion p-4 text-light text-center">
-                    <h3>Formación</h3>
+                        <a href="https://guillermoa231.github.io/blogJuegosRolling/index.html" target="_blank" class="boton text-decoration-none">Ver proyecto</a>
+                        </div>
+                    </figure>
                 </div>
-                <article class="m-5">
+                <div class="contenedor p-4">
+                    <figure>
+                        <img src="./img/helpHomei.png" alt="">
+                        <div class="capa">
+                            <h4 class="text-light">Help-Home</h4>
+                    <p>Sitio creado para que el usurio pueda buscar servicios tecnicos en general.
+                        Ingresando como administrador encontramos un crud de trabajadores</p>
                     <div>
-                        <h5 class="text-primary">Argentina programa:</h5>
-                    <p>2020 - 2023 <br>(<i>fundamentos de la programacion, html, css, javascript</i>)</p>
+                        <i class="fa-brands fa-html5" style="color: #f58438;"></i>
+                        <i class="fa-brands fa-css3-alt" style="color: #458fd3;"></i>
+                        <i class="fa-brands fa-bootstrap" style="color: #7941a4;"></i>
+                        <i class="fa-brands fa-square-js" style="color: #cfc930;"></i>
                     </div>
-                    <hr>
-                    <div>
-                        <h5 class="text-primary">RollingCode School:</h5>
-                        <p>2022 - 2023 <i>(Desarrollador web Full Stack MERN)</i></p>
-                    </div>
-                    <hr>
-                    <div>
-                        <h5 class="text-primary">Secretaría de innovación pública:</h5>
-                        <p>Programación web con <i>html y css</i> </p>
-                    </div>
-                </article>
-                <div class="bg_TituloSeccion p-4 text-light text-center">
-                    <h3>Práctica adquirida</h3>
+                    <a href="https://helphome.netlify.app/" target="_blank" class="boton text-decoration-none">Ver proyecto</a>
+                        </div>
+                    </figure>
                 </div>
-                <article>
-                    
-                </article>
-                    <hr>
-                <article>
-                    <p>Estoy actualmente en busca de mi primer empleo en el campo de la tecnología. Estoy abierto a oportunidades que me permitan crecer y adquirir experiencia práctica mientras trabajo junto a profesionales experimentados. Siendo un apasionado autodidacta, estoy dispuesto a enfrentar nuevos desafíos y continuar expandiendo mis habilidades.</p>
-                    <p>Si estás interesado en un desarrollador web comprometido, con sólidos conocimientos técnicos y un fuerte deseo de crecer en el ámbito IT, ¡espero con ansias la oportunidad de hablar contigo! Puedes contactarme en [Tu dirección de correo electrónico] o [Tu número de teléfono].</p>
-                </article>
+                <div class="contenedor p-4">
+                    <figure>
+                        <img src="./img/rollingVeti.png" alt="">
+                        <div class="capa">
+                            <h4 class="text-light">RollingVet</h4>
+                    <p>Sitio web desarrolado con la intencion el usuario sea un empleado de una veterinaria donde puede
+                        administrar turnos y pacientes </p>
+                    <div class="text-center">
+                        <i class="fa-brands fa-html5" style="color: #f58438;"></i>
+                        <i class="fa-brands fa-css3-alt" style="color: #458fd3;"></i>
+                        <i class="fa-brands fa-bootstrap" style="color: #7941a4;"></i>
+                        <i class="fa-brands fa-square-js" style="color: #cfc930;"></i>
+                        <i class="fa-brands fa-react" style="color: #538cee;"></i>
+                        <i class="fa-brands fa-node" style="color: #549447;"></i>
+                    </div>
+                    <a href="https://rollingvet-g2.netlify.app/" target="_blank" class="boton text-decoration-none">Ver proyecto</a>
+                        </div>
+                    </figure>
+                </div>
+            </article>
+            <article>
+                <p>Estoy actualmente en busca de mi primer empleo en el campo de la tecnología. Estoy abierto a
+                    oportunidades que me permitan crecer y adquirir experiencia práctica mientras trabajo junto a
+                    profesionales experimentados. Siendo un apasionado autodidacta, estoy dispuesto a enfrentar nuevos
+                    desafíos y continuar expandiendo mis habilidades.</p>
+                <p>Si estás interesado en un desarrollador web comprometido, con sólidos conocimientos técnicos y un
+                    fuerte deseo de crecer en el ámbito IT, ¡espero con ansias la oportunidad de hablar contigo! Puedes
+                    contactarme en [Tu dirección de correo electrónico] o [Tu número de teléfono].</p>
+            </article>
             </article>
         </section>
     </main>
